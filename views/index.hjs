@@ -7,5 +7,16 @@
   <body>
     <h1>{{ title }}</h1>
     <p>Welcome to {{ title }}</p>
+
+    <form action="ville" method="get" class="form">
+      <div class="form">
+        <label for="label_ville">Nom de la ville :</label>
+        <input type="text" name="nom_ville" id="nom_ville" required>
+      </div>
+      <div class="form">
+        <input type="submit" value="Envoyer">
+      </div>
+    </form>
+
   </body>
 </html>
