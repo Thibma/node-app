@@ -11,7 +11,7 @@
     <form action="ville" method="get" class="form">
       <div class="form">
         <label for="label_ville">Nom de la ville :</label>
-        <input type="text" name="nom_ville" id="nom_ville" required>
+        <input type="text" name="ville" id="nom_ville" required>
       </div>
       <div class="form">
         <input type="submit" value="Envoyer">
