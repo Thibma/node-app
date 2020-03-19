@@ -6,5 +6,18 @@
     </head>
     <body>
         <h1>Bienvenue à {{ ville }}</h1>
+
+        <div class="longitude">
+            <p>Longitude : {{ longitude }}</p>
+            <p>Latitude : {{ latitude }}</p>
+        </div>
+
+        <iframe 
+            width="600"
+            height="450"
+            frameborder="0" 
+            style="border:0" 
+            src="https://maps.google.com/maps?q={{ latitude }},{{ longitude }}+&hl=es;z=14&amp;output=embed">
+        </iframe>
     </body>
 </html>
