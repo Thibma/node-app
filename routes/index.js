@@ -1,7 +1,24 @@
 var express = require('express');
 var router = express.Router();
+//var passport = require('passport')
+var LocalStrategy = require('passport-local').Strategy
 
 const axios = require('axios')
+
+/*passport.use(new LocalStrategy(
+  function(username, password, done) {
+    User.findOne({ username: username }, function(err, user) {
+      if (err) { return done(err); }
+      if (!user) {
+        return done(null, false, { message: 'Utilisateur incorrect.' });
+      }
+      if (!user.validPassword(password)) {
+        return done(null, false, { message: 'Mot de passe incorrect.' });
+      }
+      return done(null, user);
+    });
+  }
+));*/
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
